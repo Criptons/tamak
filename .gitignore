@@ -1,7 +1,7 @@
 venv/
 db/
 .vscode/
-__pychache__/
+__pycache__/
 migrations/
 
 
