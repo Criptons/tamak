@@ -1,0 +1,10 @@
+venv/
+db/
+.vscode/
+__pychache__/
+migrations/
+
+
+db.sqlite
+*.pdf
+LICENSE

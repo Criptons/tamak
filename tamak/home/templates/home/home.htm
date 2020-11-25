@@ -1,0 +1,19 @@
+{% extends "home/wrapper.htm" %} {% block content %}
+<div class="row col-12 col-sm-12 col-md-12 col-lg-12">
+    {% for m in meal %}
+
+    <div class="card mx-2 my-3 px-3" style="width: 17rem;">
+        <img src="https://www.gastronom.ru/binfiles/images/20170418/b87bb973.jpg" class="card-img-top" alt="{{ m.food_name }}">
+        <div class="text-center my-3">
+            <h5 class="card-title"><strong>{{ m.food_name }}</strong></h5>
+        </div>
+        <h5 class="card-title"><strong>Цена: {{ m.food_price }} сом</strong></h5>
+
+        <p class="card-text"><strong>Время доставки: {{ m.food_time_to_deliver }}</strong></p>
+        <p class="card-text"><strong>Порция: {{ m.portion }}</strong></p>
+        <a href="#" class="btn btn-primary">Заказать</a>
+    </div>
+
+    {% endfor %}
+</div>
+{% endblock content %}
